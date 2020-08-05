@@ -11,7 +11,7 @@ const mongoose = require("mongoose");
 
 // mongoose.connect("mongodb+srv://admin-john:1234@cluster0-qrkv6.mongodb.net/todolistDB?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
-mongoose.connect(MONGOURI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect(process.env.MONGOURI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 const _ = require('lodash');
 
